@@ -2,50 +2,148 @@
 <html lang="en">
   <head>
     <title>Cloud Rain Snow</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.png" />
   </head>
 
   <body>
-    <div id='nav'>
-      <h2>Regional</h2>
+    <div id="container">
+      <nav>
+        <h2>Regional</h2>
 
-      <img src='raining.gif' width='26' height='26' alt='' />
-      <h1>
-        <span class='cloud'>Cloud</span>
-        <span class='rain'>Rain</span>
-        <span class='snow'>Snow</span>
-      </h1>
+        <img src="cloud.png" width="26" height="17" alt="" />
+        <h1>
+          <span class="cloud">Cloud</span>
+          <span class="rain">Rain</span>
+          <span class="snow">Snow</span>
+        </h1>
 
-      <a class='city'>Philadelphia, PA<br /></a>
-      <a>39.95, -75.17<br /></a>
+        <a class="city">Philadelphia, PA<br /></a>
+        <a>39.95, -75.17<br /></a>
+      </nav>
+
+      <div id="background_image"></div>
+
+      <article>
+        <div class="segment">
+          <a
+            ><img
+              width="800"
+              height="870"
+              src="https://forecast.weather.gov/meteograms/Plotter.php?lat=39.9525&lon=-75.1657&wfo=PHI&zcode=PAZ071&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=110111111111100000000000000000000000000000000000000000000&lg=en&indu=1!1!1&dd=0&bw=0&hrspan=48&pqpfhr=6&psnwhr=6"
+          /></a>
+        </div>
+
+        <div class="segment">
+          <a
+            ><img
+              width="800"
+              height="870"
+              src="https://forecast.weather.gov/meteograms/Plotter.php?lat=39.9525&lon=-75.1657&wfo=PHI&zcode=PAZ071&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=48&pcmd=110111111111100000000000000000000000000000000000000000000&lg=en&indu=1!1!1&dd=0&bw=0&hrspan=48&pqpfhr=6&psnwhr=6"
+          /></a>
+        </div>
+
+        <div id="maps">
+          <div class="row">
+            <img
+              src="https://graphical.weather.gov/images/nemetro/MaxT1_nemetro.png"
+              alt="High Temperature"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/T1_nemetro.png"
+              alt="Temperature 1"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/T2_nemetro.png"
+              alt="Temperature 2"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/T3_nemetro.png"
+              alt="Temperature 3"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/T4_nemetro.png"
+              alt="Temperature 4"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/T5_nemetro.png"
+              alt="Temperature 5"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/T6_nemetro.png"
+              alt="Temperature 6"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/T7_nemetro.png"
+              alt="Temperature 7"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/T8_nemetro.png"
+              alt="Temperature 8"
+            />
+          </div>
+          <div class="row">
+            <img
+              src="https://graphical.weather.gov/images/nemetro/PoP121_nemetro.png"
+              alt="12Hr Probability Precipitation"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/Sky1_nemetro.png"
+              alt="Sky Cover 1"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/Sky2_nemetro.png"
+              alt="Sky Cover 2"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/Sky3_nemetro.png"
+              alt="Sky Cover 3"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/Sky4_nemetro.png"
+              alt="Sky Cover 4"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/Sky5_nemetro.png"
+              alt="Sky Cover 5"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/Sky6_nemetro.png"
+              alt="Sky Cover 6"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/Sky7_nemetro.png"
+              alt="Sky Cover 7"
+            />
+            <img
+              src="https://graphical.weather.gov/images/nemetro/Sky8_nemetro.png"
+              alt="Sky Cover 8"
+            />
+          </div>
+        </div>
+
+        <div id="forecast">
+          <div class="row">
+            <img
+              src="https://www.wpc.ncep.noaa.gov/noaa/noaad1.gif"
+              alt="National Forecast Chart 1"
+            />
+            <img
+              src="https://www.wpc.ncep.noaa.gov/noaa/noaad2.gif"
+              alt="National Forecast Chart 2"
+            />
+            <img
+              src="https://www.wpc.ncep.noaa.gov/noaa/noaad3.gif"
+              alt="National Forecast Chart 3"
+            />
+          </div>
+        </div>
+
+        <!-- <iframe id="radar" src="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTg5LjM2OCwzNy44NTRdLCJ6b29tIjo3LCJsb2NhdGlvbiI6Wy03NS4yMDQsMzkuOTZdfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2V9#/"></iframe> -->
+      </article>
     </div>
-
-    <div id='background_image'></div>
-
-    <div id='container'>
-      <div id="column3">
-        <a id="graph"><img src='http://forecast.weather.gov/meteograms/Plotter.php?lat=39.9525&lon=-75.1657&wfo=PHI&zcode=PAZ071&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=110111111111100000000000000000000000000000000000000000000&lg=en&indu=1!1!1&dd=0&bw=0&hrspan=48&pqpfhr=6&psnwhr=6' /></a>
-      </div>
-
-      <div id="column4">
-        <a id="graph"><img src='http://forecast.weather.gov/meteograms/Plotter.php?lat=39.9525&lon=-75.1657&wfo=PHI&zcode=PAZ071&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=48&pcmd=110111111111100000000000000000000000000000000000000000000&lg=en&indu=1!1!1&dd=0&bw=0&hrspan=48&pqpfhr=6&psnwhr=6' /></a>
-      </div>
-
-      <div id="column1">
-        <a><img src="http://radar.weather.gov/Conus/Loop/northeast_loop.gif" width="600" height="571" alt="northeast radar loop" /></a>
-        <a href="http://radar.weather.gov/Conus/Loop/NatLoop.gif"><img src="http://radar.weather.gov/Conus/Loop/NatLoop_Small.gif" width="600" height="282" alt="US radar composite loop" /></a>
-      </div>
-
-      <div id="column2">
-        <a class="float" href="http://www.goes.noaa.gov/MOVIES/ECVS.mpg"><img src="http://www.goes.noaa.gov/GIFS/ECVS.JPG" width="371" height="278" alt="visible satelite" /></a>
-        <a class="float" href="http://www.goes.noaa.gov/MOVIES/ECWV.mpg"><img src="http://www.goes.noaa.gov/GIFS/ECI7.JPG" width="371" height="278" alt="water vapor satelite" /></a>
-        <a class="clear"><img src="http://www.hpc.ncep.noaa.gov/sfc/namfntsfcwbg.gif" width="750" height="562" alt="US surface data" /></a>
-      </div>
-
-    </div>
-
   </body>
 </html>

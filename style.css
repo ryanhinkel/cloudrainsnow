@@ -1,67 +1,54 @@
+html,
 body {
-  background-color: #62faa4;
-  background-image: url("gradient.png");
-  background-repeat: repeat-x;
-  font-family: Helvetica, Arial, san-serif;
+  height: 100%;
 }
 
 body {
-  margin: 0px 12px 12px 0;
-  width: 3200px;
-  color: #4d525a;
   font-family: "Helvetica Neue", helvetica, san-serif;
+  color: #4d525a;
+  background-color: #62faa4;
+  background-image: url("cloudrainsnow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px;
 }
 
 img {
   display: block;
 }
 
-#background_image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: url("cloudrainsnow.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.2;
+#container {
+  display: inline-flex;
+  align-items: stretch;
+  min-height: 100%;
 }
 
-#nav {
-  position: relative;
-  z-index: 10;
-  float: left;
-  height: 1000px;
-  margin: 0 12px 0 0;
+nav {
+  margin-right: 12px;
   background: #fff;
   padding: 12px 24px;
   border-right: 2px #667d8a solid;
   width: 102px;
 }
 
-#nav a {
+nav a {
   font-size: 12px;
 }
 
-#nav a.zip {
+nav a.zip {
   font-size: 16px;
 }
 
-#nav a.city {
+nav a.city {
   font-size: 12px;
 }
 
-#nav a.tech {
+nav a.tech {
   font-size: 12px;
   position: absolute;
   bottom: 20px;
   left: 20px;
-}
-
-#container {
-  padding-top: 12px;
-  position: relative;
 }
 
 #citymenu {
@@ -108,89 +95,49 @@ h2 {
   text-transform: uppercase;
 }
 
-#nav form {
+nav form {
   margin-top: 30px;
 }
 
-#nav form input {
+nav form input {
   border-style: none;
-}
-
-a {
-  margin: 0px 0px 11px;
 }
 
 img {
   border-style: none;
 }
 
-#column1 {
-  float: left;
-  width: 616px;
+article {
+  padding-top: 12px;
+  display: inline-flex;
 }
 
-#column1 a {
-  display: block;
+.segment {
+  margin-right: 12px;
+}
+
+.row {
+  display: flex;
+}
+
+.row img {
+  margin-right: 12px;
+}
+
+.segment img {
+  border: 1px #667d8a solid;
+}
+
+#maps img {
+  height: 426px;
+  width: 337px;
+  margin-bottom: 12px;
+  margin-right: 12px;
   border: 2px #667d8a solid;
-  width: 600px;
 }
 
-#column2 {
-  float: left;
-  width: 766px;
-}
-
-#column2 a {
-  display: block;
+#forecast img {
+  margin-right: 12px;
+  filter: contrast(150%);
   border: 2px #667d8a solid;
-  width: 750px;
-}
-
-#column2 a.float {
-  float: left;
-  border: 2px #000 solid;
-  border-width: 8px 0 9px;
-  width: 371px;
-  margin: 0 11px 11px 0;
-}
-
-#column3 {
-  float: left;
-  width: 812px;
-}
-
-#column3 a {
-  display: block;
-  border: 1px #667d8a solid;
-  width: 800px;
-}
-
-#column4 {
-  float: left;
-  width: 812px;
-}
-
-#column4 a {
-  display: block;
-  border: 1px #667d8a solid;
-  width: 800px;
-}
-
-#column5 {
-  float: left;
-  width: 800px;
-}
-
-#column5 a {
-  display: block;
-  border: 1px #667d8a solid;
-  width: 800px;
-}
-
-a.float {
-  float: left;
-}
-
-a.clear {
-  clear: left;
 }
